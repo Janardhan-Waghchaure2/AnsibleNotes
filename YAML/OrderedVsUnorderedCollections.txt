@@ -1,0 +1,37 @@
+In YAML, collections can be either ordered or unordered, and they are represented 
+using different structures:
+
+
+Ordered Collections
+
+	1.Sequences: These are ordered lists of items, similar to arrays in other programming languages. 
+		     Each item in a sequence is denoted by a dash (-).
+		     For example:
+			fruits:
+  			  - apple
+  			  - banana
+  			  - cherry
+
+	2.Ordered Mappings: YAML supports ordered mappings using the !!omap tag, 
+          which ensures that the order of key-value pairs is preserved. For example:
+		       !!omap
+			 - Mark McGwire: 65
+			 - Sammy Sosa: 63
+			 - Ken Griffey: 58
+
+Unordered Collections
+
+	1. Mappings: These are key-value pairs, similar to dictionaries or hash maps. 
+           The order of keys is not guaranteed. For example:
+	   player_stats:
+  		hr: 65
+  		avg: 0.278
+  		rbi: 147
+
+	2. Sets: YAML represents sets as mappings where each key is associated with a null value. 
+	   For example:
+		set1: !!set
+  		      ? one
+  		      ? two
+
+

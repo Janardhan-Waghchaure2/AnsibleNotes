@@ -1,0 +1,46 @@
+1. list of scalar in yaml
+
+- Cat
+- Dog
+- Tiger
+
+
+2. nested list in yaml
+
+- 
+ - Cat
+ - Black Cat
+ - Orange Cat
+ - White Cat
+-
+ - Dog
+ - Black Dog
+ - Orange Dog
+ - White Dog
+-
+ - Tiger
+ - Black Tiger
+ - Orange Tiger
+ - White Tiger
+
+
+
+3. list of key value pair
+
+- k1 : v1
+  k2 : v2
+- k3 : v3
+  k4 : v4
+
+
+4. collection of mapping scalars to scalars 
+
+hr: 87
+avg: 0.298
+rbi: 149
+
+
+5. flow sequnce in yaml
+
+fruits: [apple, banana, cherry]
+

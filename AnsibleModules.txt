@@ -1,0 +1,49 @@
+# apt modules ------------
+
+- name: ansible install the latest version of nginx
+  apt:
+   name: nginx
+   state: latest
+
+- name: Add a new repository(from this repo all packages will be installed)
+  apt_repository:
+    repo: 'deb http://example.com/debian stable main'
+    state: present
+
+- name: update the apt cache
+  apt_cache:
+      update_cache: yes
+
+
+# service modules --------
+
+- name: start the apache server
+  service:
+     name: httpd
+     state: started
+
+# shell module ----------
+
+- name: execute a shell script
+  shell: /user/local/bin/myscript.sh
+
+
+# command module ------
+
+- name: Run a command
+  command: cat /etc/motd
+
+
+# copy module -----
+- name: Copy a file to the remote server
+  copy: 
+    src: /local/path/to/file
+    dest: /remote/path/to/file
+    mode: '0644'
+
+# file module -----
+- name: Create a directory on target machine
+  file:
+    path: /etc/my_dir
+    state: directory
+    mode: '0755'

@@ -1,0 +1,54 @@
+In the world of Ansible, adhoc commands and playbooks serve different 
+purposes, each with its own advantages.
+
+Adhoc Commands
+
+Purpose: Used for quick, one-time tasks.
+
+Usage: You run these commands directly from the command line.
+
+Syntax: They are straightforward and don’t require any files.
+
+
+Advantages:
+
+Quick and easy to use for immediate tasks.
+
+No need to write files or scripts.
+---------------------
+
+Playbooks
+
+Purpose: Used for more complex, repeatable tasks.
+
+Usage: Playbooks are YAML files that define the desired state of the system.
+
+Syntax: They are written in YAML and can include tasks, variables, and roles.
+
+
+Advantages:
+
+Reusable and can be version controlled.
+
+Supports complex workflows and dependencies.
+
+Can be parameterized and modular using roles and variables.
+
+
+----------------------
+
+In summary, if you need to execute a quick command across your hosts, 
+adhoc commands are the way to go. However, for more detailed and 
+repeatable automation, playbooks are the better choice.
+
+
+
+
+----------------------
+
+int i = 0 , j = arr.length - 1;
+while (i < j){
+    int sum = arr[i] + arr[j];
+    if ()
+}
+

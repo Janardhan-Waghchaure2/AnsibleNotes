@@ -1,0 +1,31 @@
+1. key:value pair storage yaml
+
+key1 : value1
+key2 : value2
+key3 : value3
+key4 : value4
+
+
+2. nested key:value pair storage yml
+
+key1 : 
+   - k1 : v1
+   - k2 : v2
+key2 : 
+   - k3 : v3
+   - k4 : v4
+
+
+3. key:value where value is array
+
+key1 : 
+   -value1
+   -value2
+   -value3
+   -value4
+
+key2 : 
+   -value1
+   -value2
+   -value3
+   -value4

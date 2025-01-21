@@ -1,0 +1,44 @@
+------ playbook.yml
+-
+  name: this is our first play
+  hosts: host_name # name of server on which command to be performed.
+  vars: # define variables here
+     servicename:apache2
+  tasks:
+    -
+       name: 'creating file using variale'
+       service: 
+	  name:"{{ servicename }}" 
+          state:started
+
+
+# inside a play ,  vars key is used to store variables.  
+
+
+----- /etc/ansible/hosts
+
+webserver1 ansible_host=192.168.25.15 ansible_ssh_pass=password ansible_connection=ssh ansible_port=22 ansible_user=root
+sqlserver1 ansible_host=192.168.25.15 ansible_ssh_pass=password ansible_connection=ssh ansible_port=23 ansible_user=root
+
+[webservers]
+webserver1
+
+[databaseservers]
+sqlserver1
+
+[web_database_servers]
+webserver1
+sqlserver1
+
+
+
+-
+ name:name of the tasks describing the task.
+ hosts: alias for the server we want to execute.
+ vars:
+     myVarName:myValOne
+     myVar2:myValTwo
+ tasks:
+   -
+    name:'task description'
+    service: 

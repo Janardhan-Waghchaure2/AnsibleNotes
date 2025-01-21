@@ -1,0 +1,19 @@
+# single line commnet
+
+# this is
+# multiline 
+# comment
+
+
+ex:-
+
+key: #comment 1
+   - value line 1
+   #comment 2
+   - value line 2
+   #comment 3
+   - value line 3
+
+
+
+

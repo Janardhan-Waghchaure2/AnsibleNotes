@@ -1,0 +1,21 @@
+New lines are preserved in literals are shown below 
+
+--- |
+fasdfdsaf safasd
+fasdfdsa
+adsfads
+asdf
+
+
+
+
+The folded newlines are preserved for more "indented lines" and "blank lines" as shown below −
+
+>
+Sammy Sosa completed another
+  fine season with great stats.
+
+63 Home Runs
+0.288 Batting Average
+What a year!
+

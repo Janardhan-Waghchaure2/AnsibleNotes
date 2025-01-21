@@ -1,0 +1,17 @@
+In computing, services and processes are related but distinct concepts:
+
+Process: A process is an instance of a running program. It includes the 
+         program code and its current activity. Processes can be user-initiated 
+         (like opening a web browser) or system-level (like background tasks). 
+         Each process has its own memory space and system resources.
+
+Service: A service is a specialized type of process that runs in the background 
+         and performs specific functions, often without direct user interaction. 
+         Services are typically used to provide system-level functions like networking, 
+         printing, or system updates. 
+         They start automatically at boot time and run continuously.
+
+In summary, while all services are processes, not all processes are services.
+ 
+Services are designed to run in the background and provide ongoing functionality, 
+whereas processes can be any running program or task.

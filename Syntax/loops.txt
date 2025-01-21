@@ -1,0 +1,33 @@
+let's say we want to install 2 packages as shown below  
+---
+-
+  name: installing packages without loop 
+  hosts: webserver1
+  tasks:
+      -
+       name: "installing"
+       apt: 
+	name:"vsftpd" 
+	state:present
+      -
+       name: "installing"
+       apt:
+	 name:"tree" 
+         state:present
+
+# in above code there is a lot of code duplication and if we want to install more
+# packages then there will be 3 lines needed per package installed. so instead use
+# below looping syntax.
+
+-
+  name: looping demonstration play
+  hosts: webserver1
+  tasks:
+       -
+        name: "installing"
+        apt: name="{{ item }}" state=persent
+        with_items:
+              - vsftpd
+              - tree
+
+

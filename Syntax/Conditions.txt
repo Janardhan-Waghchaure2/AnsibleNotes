@@ -1,0 +1,55 @@
+------- playbook.yml
+
+
+-
+ name: name of playbook
+ hosts: servernamealias
+ vars: 
+    age: 'run'
+ tasks:
+    -
+     name: 'task no. 1'
+     command: touch /tmp/sample.txt
+     when: age == run
+    -
+     name: 'task no. 2'
+     command: touch /tmp/sample.txt
+     when: age != run
+    -
+     name: 'task no. 3'
+     command: touch /tmp/sample.txt
+     when: age < 22
+
+-
+  name: conditional play
+  hosts: webserver1 
+  vars:
+      age: 18
+  tasks:
+      -
+        name: 'creating file using conditions'
+        command: touch /tmp/sample.txt
+        when: age == 18
+      -
+	name: 'creating file using conditions'
+        command: touch /tmp/sample.txt
+        when: age > 18
+      -
+	name: 'creating file using conditions'
+        command: touch /tmp/sample.txt
+        when: age < 10
+      -
+	name: 'creating file using conditions'
+        command: touch /tmp/sample.txt
+        when: age > 10 and age < 18
+      -
+	name: 'creating file using conditions'
+        command: touch /tmp/sample.txt
+        when: age == 22 or age == 24
+
+---
+
+first play will be only executed when age is 18.
+second play will be only executed when age is greater than 18.
+third play will be only executed when age is less than 10.
+fourth play will be only executed when age is between 10-18.

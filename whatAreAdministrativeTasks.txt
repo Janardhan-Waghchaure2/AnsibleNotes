@@ -1,0 +1,15 @@
+Administrative tasks in IT involve managing and supporting the infrastructure, systems, and processes 
+that keep an organization’s technology running smoothly.
+
+
+Creating and managing user accounts.
+
+Monitoring system performance and uptime.
+
+Scheduling regular data backups.
+
+Installing and updating software packages.
+
+Applying security patches and updates.
+
+Managing network configurations and settings.

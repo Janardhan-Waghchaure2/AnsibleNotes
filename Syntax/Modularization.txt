@@ -1,0 +1,42 @@
+1. imagine a scenario where we have a lots of variables and tasks in a file
+   so instead of writing all of them into a single file with tasks we can
+   just create a seperate file for them.
+
+--- variable.yml
+var1: var1
+var2: var2
+.
+.
+var4: var4
+
+--- tasks.yml
+-
+  name: 'task1'
+  command: touch /tmp/var/{{ var1}}.txt
+-
+  name: 'task2'
+  command: touch /tmp/var/{{ var2}}.txt
+-
+  name: 'task3'
+  command: touch /tmp/var/{{ var3}}.txt
+-
+  name: 'task4'
+  command: touch /tmp/var/{{ var4}}.txt
+
+
+--- playbook.yml
+
+-
+ name: this is our first play.
+ hosts: webserver1
+ vars_files:
+    - variable.yml
+ tasks:
+    - include: task.yml
+
+
+
+-------------------
+2. we can also add multiple variable files under vars_files
+
+ 

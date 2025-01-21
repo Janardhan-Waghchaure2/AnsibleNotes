@@ -1,0 +1,5 @@
+Task: A single action performed by a module (e.g., install a package).
+
+Play: A set of tasks applied to a group of hosts.
+
+Playbook: A YAML file containing one or more plays to define the desired state of your systems.

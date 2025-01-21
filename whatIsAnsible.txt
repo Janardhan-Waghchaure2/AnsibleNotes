@@ -1,0 +1,14 @@
+1. Ansible is an automation tool.
+
+2. Ansible does not require any additional software (agents) to be installed on the managed hosts. 
+Instead, Ansible uses standard communication protocols like SSH for Unix-like systems and WinRM for 
+Windows systems to connect and execute tasks remotely. Thats why ANSIBLE IS AGENTLESS.
+
+--------
+Advantages.
+
+1. Simple and easy to use: due to yaml 
+2. Agentless architecture: no agents needs to be installed on remote systems
+3. Config management : easy to do tasks like provisiining ,app deployment , infra
+   management
+4. scalability : easily scales for more. no of servers

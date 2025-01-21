@@ -1,0 +1,13 @@
+1. Configuration Management: Ansible can automate the setup and maintenance of servers, ensuring consistent configurations across environments. 
+For example, you can use Ansible to install and configure web servers, databases, and application servers.
+
+2. Continuous Integration/Continuous Deployment (CI/CD): Ansible helps automate the deployment pipeline, 
+from pulling the latest code from version control to 
+executing database migrations and restarting services. 
+This ensures smooth and error-free deployments.
+
+3. Cloud Provisioning: Ansible can manage cloud resources across platforms like AWS, Azure, and Google Cloud. It automates the creation, configuration, and management of virtual machines, networking components, and storage options.
+
+4. Network Automation: Ansible is used to automate the configuration of network devices, ensuring compliance with network standards and managing network infrastructure efficiently. This includes tasks like updating firmware, configuring interfaces, and managing routing protocols.
+
+5. Security and Compliance: Ansible can enforce security policies and ensure compliance across your infrastructure. It automates tasks such as configuring firewalls, managing user permissions, and deploying intrusion detection systems.

@@ -1,0 +1,8 @@
+1. we have a cetral server running ansible script.
+   and multiple servers which meant to be controlled by the script.
+
+2. ansible has 3 components.
+	1. modules  -> small programs to do a task.
+	2. inventory  -> stores servers information on which the instructions to be  
+                         performed.
+	3. playbook  -> set of instructions to be perfomed.

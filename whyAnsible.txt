@@ -1,0 +1,8 @@
+1. it can automate the repetative tasks reducing the time.
+   ex:- installing a package on server vs doing this same thing on 
+   20 servers inside the network.
+
+   here ansible avoids
+	1. repetative
+	2. time consuming
+	3. reduced chances of errors

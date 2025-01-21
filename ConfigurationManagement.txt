@@ -1,0 +1,50 @@
+1. System Administrator : before devops , administrators used to do configs.
+   manually.
+
+
+2. Consider an on-premises servers.
+	1. 50 Linux servers
+	2. 25 Centos servers
+	3. 25 ubuntu servers (100 total servers in infra.)
+   now all of this infra needs to be managed by this administrator
+   (THAT TOO MANUALLY. WITHOUT ANY AUTOMATION HE HAS TO REPEAT THE SAME TASK
+    ex:- os update on 50 Linux servers)
+
+
+3. an administrator might need to do below things on the on-premisis infra.
+   1. upgrades
+   2. secure patches
+   3. installations(ex:- lets say every server needs git to be pre installed
+      then instead of devs. installing git administrator willbe installing)
+      ex:- lets say each server needs some DB to be preinstalled then 
+      administrators will be doing it.
+
+4. to perform above tasks on infra(100 servers) with 5 administrators
+   each one will have to ssh(or log into servers) and do this taks manually
+   on each server. to avoid this we have tools like ansible.
+
+   for smaller server count it's fine , what if there are 1000 or 10k server.
+
+
+5. before the advanced tools like ansible , shell scripts were used to manage
+   the config(again depending apoun config server commands will differ)
+   like
+   	scripts hosted on linux -> shellscript
+        scrpts hosted on windows -> powershell script etc..
+
+
+6. Now each application is moving towards cloud WHICH MEANS server creation
+   has became 10X than previous , HENCE CONFIG MANAGEMENT IS NOW EVEN 
+   EVEN BIGGER PROBLEM.(every company is now having horizontally scalled
+   100's of servers on cloud)
+
+7. config management tools
+	1. puppet -> old
+	2. chef  -> old
+	3. ansible -> most used by devops people.
+	4. salt  
+
+
+
+
+

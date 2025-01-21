@@ -6,6 +6,9 @@
 playbooks -> yml containing commands to be executed on those servers.
 inventory  -> list of servers which we intents to control
 
-central controller 
-computers which needs to be controlled.
+terminology:
+Main/Master Machines: central controller machine which contains settings we want other machines to have. 
+Slave Machines: computers which needs to be controlled(Controlled by Master).
+
+
 

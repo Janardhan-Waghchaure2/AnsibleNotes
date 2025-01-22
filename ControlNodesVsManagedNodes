@@ -1,0 +1,7 @@
+Control Node: This is the machine from which you run Ansible commands. It's the central point 
+where you execute playbooks and manage configurations. The control node can be any computer that 
+meets the software requirements, such as a laptop, desktop, or server.
+
+Managed Node: These are the target devices that Ansible manages. Managed nodes can be servers, 
+network appliances, virtual machines, or any other devices you want to automate. Typically, Ansible is 
+not installed on managed nodes, but it connects to them to apply configurations and run tasks.

@@ -2,6 +2,8 @@
 
 2. ansible-playbook -i custom_hosts_file file.yml # this will use given custom hosts file for processing
 
+3. ansible slaves -m ping -i hosts # to ping all the slaves to check for connectivity.
+
 
 
 playbooks -> yml containing commands to be executed on those servers.

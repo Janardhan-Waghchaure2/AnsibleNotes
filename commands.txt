@@ -1,5 +1,6 @@
 1. ansible-playbook playbook.yml # this will use hosts(default) inventory
 
+2. ansible-playbook -i custom_hosts_file file.yml # this will use given custom hosts file for processing
 
 
 
